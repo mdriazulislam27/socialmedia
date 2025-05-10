@@ -1,0 +1,88 @@
+:root {
+  --bg-color: #f0f2f5;
+  --text-color: #000;
+  --box-color: #fff;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #fff;
+  --box-color: #2d2d2d;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: var(--box-color);
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #165dcb;
+}
+
+#messagesList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.message-item {
+  background-color: #e9ebee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.message-item.dark {
+  background-color: #3b3b3b;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
